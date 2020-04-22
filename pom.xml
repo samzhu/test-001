@@ -123,6 +123,30 @@
                 	<failOnNoGitDirectory>false</failOnNoGitDirectory>
                 </configuration>
             </plugin>
+            <plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>2.2.0</version>
+				<configuration>
+					<from>
+						<image>gcr.io/distroless/java</image>
+					</from>
+					<to>
+						<image>docker.io/${env.DOCKER_USER}/test-01:${env.GITHUB_RUN_ID}</image>
+						<auth>
+							<username>${env.DOCKER_USER}</username>
+							<password>${env.DOCKER_PASSWORD}</password>
+						</auth>
+					</to>
+					<container>
+						<useCurrentTimestamp>true</useCurrentTimestamp>
+					</container>
+					<ports>
+						<port>8080</port>
+					</ports>
+				</configuration>
+			</plugin>
+            
 		</plugins>
 	</build>
 
