@@ -132,7 +132,7 @@
 						<image>gcr.io/distroless/java</image>
 					</from>
 					<to>
-						<image>docker.io/${env.DOCKER_USER}/test-01:${env.GITHUB_RUN_ID}</image>
+						<image>docker.io/${env.DOCKER_USER}/{env.IMAGE_NAME}:${env.GITHUB_RUN_ID}</image>
 						<auth>
 							<username>${env.DOCKER_USER}</username>
 							<password>${env.DOCKER_PASSWORD}</password>
