@@ -16,7 +16,7 @@
 
 ## Start application
 1. Replace ${YOUR_NEW_RELIC_LICENSE_KEY} in docker-compose.yml
-2. docker-compose up -d
+2. docker-compose up micro-services
 
 # Springboot log Output to New Relic Logs
 
@@ -29,7 +29,7 @@
 
 ## Start application
 1. Replace ${YOUR_NEW_RELIC_LICENSE_KEY} in docker-compose.yml
-2. docker-compose up -d
+2. docker-compose up
 
 ## Result
 ![newrelic-logs](https://raw.githubusercontent.com/samzhu/test-001/master/images/newrelic-logs.png)
