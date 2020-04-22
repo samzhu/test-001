@@ -11,7 +11,7 @@ public class ScheduledTask {
 	
 	@Scheduled(fixedRate = 1000)
     public void task() {
-        log.info("每隔5秒執行一次");
+        log.info("每隔1秒執行一次");
     }
 
 }

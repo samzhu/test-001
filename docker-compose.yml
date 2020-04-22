@@ -1,13 +1,26 @@
 version: "3.7"
 
 services:
-  micro-service:
+  micro-services:
     image: "spike19820318/test-01:latest"
     container_name: "test-01"
     ports:
       - "8080:8080"
+    volumes:
+       - ./logs:/logs
     environment:
       - NEW_RELIC_APP_NAME=test-01
       - NEW_RELIC_LICENSE_KEY=${YOUR_NEW_RELIC_LICENSE_KEY}
-      - ENV_NEW_RELIC_LOG_FILE_NAME=STDOUT
       - SPRING_PROFILES_ACTIVE=sit
+      - BUILD_FOLDER=/logs
+    depends_on:
+      - newrelic-fluentbit
+  newrelic-fluentbit:
+    image: newrelic/newrelic-fluentbit-output:1.2.0
+    restart: always
+    volumes:
+      - ./logs:/logs
+    environment:
+      - LICENSE_KEY=${YOUR_NEW_RELIC_LICENSE_KEY}
+      - FILE_PATH=/logs/*
+      - MAX_RECORDS=1

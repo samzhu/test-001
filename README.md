@@ -17,3 +17,16 @@
 ## Start application
 1. Replace ${YOUR_NEW_RELIC_LICENSE_KEY} in docker-compose.yml
 2. docker-compose up -d
+
+# Springboot log Output to New Relic Logs
+
+## Springboot log
+1. [JSON Logback with Logstash](https://cloud.spring.io/spring-cloud-sleuth/reference/html/#json-logback-with-logstash)
+
+## Fluent Bit
+1. [DockerHub newrelic/newrelic-fluentbit-output](https://hub.docker.com/r/newrelic/newrelic-fluentbit-output)
+2. [GitHub Fluent Bit Output for New Relic](https://github.com/newrelic/newrelic-fluent-bit-output)
+
+## Start application
+1. Replace ${YOUR_NEW_RELIC_LICENSE_KEY} in docker-compose.yml
+2. docker-compose up -d
