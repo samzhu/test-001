@@ -139,7 +139,7 @@
 						</auth>
 					</to>
 					<container>
-						<useCurrentTimestamp>true</useCurrentTimestamp>
+						<creationTime>USE_CURRENT_TIMESTAMP</creationTime>
 					</container>
 					<ports>
 						<port>8080</port>
