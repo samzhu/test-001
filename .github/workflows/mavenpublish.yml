@@ -26,6 +26,10 @@ jobs:
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+      env:
+        DOCKER_USER: ${{ secrets.DOCKER_USER }}
+        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+        GITHUB_RUN_ID: ${{ github.run.id }}
     
     - name: Publish to DockerHub
       run: mvn compile jib:build
