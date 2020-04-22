@@ -27,10 +27,12 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
-    - name: Publish to DockerHub
+    - name: Download newrelic-java
       run: |
         curl -O https://download.newrelic.com/newrelic/java-agent/newrelic-agent/current/newrelic-java.zip
         Unzip newrelic-java.zip
+
+    - name: Publish to DockerHub
       run: mvn compile jib:build
       env:
         IMAGE_NAME: test-01
