@@ -32,4 +32,4 @@
 2. docker-compose up -d
 
 ## Result
-![newrelic-log](https://raw.githubusercontent.com/samzhu/test-001/master/images/newrelic-log.png)
+![newrelic-logs](https://raw.githubusercontent.com/samzhu/test-001/master/images/newrelic-logs.png)
