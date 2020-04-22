@@ -146,6 +146,7 @@
 						<creationTime>USE_CURRENT_TIMESTAMP</creationTime>
 						<jvmFlags>
 							<jvmFlag>-server</jvmFlag>
+							<jvmFlag>-javaagent:/newrelic/newrelic.jar</jvmFlag>
 						</jvmFlags>
 					</container>
 					<ports>
