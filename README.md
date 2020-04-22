@@ -30,3 +30,6 @@
 ## Start application
 1. Replace ${YOUR_NEW_RELIC_LICENSE_KEY} in docker-compose.yml
 2. docker-compose up -d
+
+## Result
+![newrelic-log](https://raw.githubusercontent.com/samzhu/test-001/master/images/newrelic-log.png)
