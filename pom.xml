@@ -129,7 +129,7 @@
 				<version>2.2.0</version>
 				<configuration>
 					<from>
-						<image>gcr.io/distroless/java</image>
+						<image>gcr.io/distroless/java:8</image>
 					</from>
 					<to>
 						<image>docker.io/${env.DOCKER_USER}/${env.IMAGE_NAME}</image>
@@ -147,7 +147,7 @@
 						<jvmFlags>
 							<jvmFlag>-server</jvmFlag>
 							<jvmFlag>-Dfile.encoding=UTF8</jvmFlag>
-							<jvmFlag>-Djava.security.egd=file:/dev/./urandom </jvmFlag>
+							<jvmFlag>-Djava.security.egd=file:/dev/./urandom</jvmFlag>
 							<jvmFlag>-javaagent:/newrelic/newrelic.jar</jvmFlag>
 						</jvmFlags>
 					</container>
