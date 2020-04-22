@@ -146,6 +146,8 @@
 						<creationTime>USE_CURRENT_TIMESTAMP</creationTime>
 						<jvmFlags>
 							<jvmFlag>-server</jvmFlag>
+							<jvmFlag>-Dfile.encoding=UTF8</jvmFlag>
+							<jvmFlag>-Djava.security.egd=file:/dev/./urandom </jvmFlag>
 							<jvmFlag>-javaagent:/newrelic/newrelic.jar</jvmFlag>
 						</jvmFlags>
 					</container>
