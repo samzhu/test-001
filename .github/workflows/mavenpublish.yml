@@ -29,8 +29,10 @@ jobs:
 
     - name: Download newrelic-java
       run: |
+        sudo apt-get install unzip
         curl -O https://download.newrelic.com/newrelic/java-agent/newrelic-agent/current/newrelic-java.zip
         Unzip newrelic-java.zip
+        ls
 
     - name: Publish to DockerHub
       run: mvn compile jib:build
